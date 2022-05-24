@@ -3,21 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"npm:next:dev\" \"npm:slicemachine\" --names \"next,slicemachine\" --prefix-colors gray,magenta",
+    "next:dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@prismicio/client": "^6.4.3",
+    "@prismicio/helpers": "^2.3.0",
+    "@prismicio/next": "^0.1.2",
+    "@prismicio/react": "^2.3.0",
+    "@prismicio/slice-simulator-react": "^0.2.2",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.1",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.14",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "slice-machine-ui": "^0.3.8",
     "tailwindcss": "^3.0.24"
   }
 }

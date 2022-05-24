@@ -1,0 +1,81 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Hero",
+      "primary": {
+        "tagline": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Tagline",
+            "placeholder": "Optional - Text above the title",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Large, bold title",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "Optional - Main text to display",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "backgroundImage": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "buttonLink": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Link for the button",
+            "select": null
+          }
+        },
+        "buttonText": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text",
+            "placeholder": "Optional - Text for the button"
+          }
+        },
+        "buttonStyle": {
+          "type": "Select",
+          "config": {
+            "label": "Button Style",
+            "placeholder": "Determines the button's appearance",
+            "options": [
+              "Filled",
+              "Outlined"
+            ]
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

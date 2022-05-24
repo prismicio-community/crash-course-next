@@ -1,0 +1,72 @@
+{
+  "id": "image_and_text",
+  "type": "SharedSlice",
+  "name": "ImageAndText",
+  "description": "ImageAndText",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageAndText",
+      "primary": {
+        "imageSide": {
+          "type": "Select",
+          "config": {
+            "label": "Image Side",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Right"
+            ],
+            "default_value": "Left"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "tagline": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Tagline",
+            "placeholder": "Optional - Text above the main text",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "Main text to display",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "buttonLink": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "Optional - Link for the button",
+            "select": null
+          }
+        },
+        "buttonText": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text",
+            "placeholder": "Optional - Text for the button"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

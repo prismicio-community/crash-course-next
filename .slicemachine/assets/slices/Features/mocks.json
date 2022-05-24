@@ -1,0 +1,164 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "features",
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Amet sint laboris est adipisicing cillum dolore ipsum laboris culpa sint laborum aliqua.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "enable cross-media e-services"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Anim laborum id elit nostrud aliquip elit esse excepteur quis aliqua aute. Dolor ex mollit ullamco. Eiusmod minim exercitation sint aliquip.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "facilitate open-source paradigms"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Id aliqua proident laboris amet adipisicing ullamco officia sint esse aliqua adipisicing laborum aute voluptate. Anim anim dolore quis sint.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "buttonText": "incentivize next-generation applications"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Non velit incididunt aute ut eiusmod nostrud irure ea quis enim dolor est laboris qui.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        },
+        "buttonText": "empower cross-media e-services"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Consectetur reprehenderit sint officia sit in est eu laborum anim eu sunt anim pariatur exercitation.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "buttonText": "deploy strategic e-markets"
+      },
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+        },
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Pariatur elit et qui dolor eiusmod duis ut excepteur cupidatat ipsum ex culpa.",
+            "spans": []
+          }
+        ],
+        "buttonLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "repurpose mission-critical web-readiness"
+      }
+    ],
+    "primary": {
+      "tagline": [
+        {
+          "type": "paragraph",
+          "text": "Id elit sint exercitation officia minim cillum esse aute incididunt commodo et ipsum. Nostrud ea commodo ea id amet qui consectetur et amet. Enim laborum incididunt amet do ex ex pariatur magna reprehenderit consequat amet minim nulla ut aliqua.",
+          "spans": []
+        }
+      ],
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Mollit exercitation quis nulla laborum incididunt in consectetur proident et sit minim. Lorem nisi exercitation velit laboris sint esse anim velit velit.",
+          "spans": []
+        }
+      ],
+      "alignment": "Left"
+    }
+  }
+]
