@@ -1,31 +1,38 @@
-import { PrismicRichText } from "@prismicio/react";
+import * as prismicH from "@prismicio/helpers";
+import { PrismicRichText, PrismicText } from "@prismicio/react";
 
-const Hero = ({ slice }) => (
-  <section>
-    <span className="title">
-      {slice.primary.title ? (
-        <PrismicRichText field={slice.primary.title} />
-      ) : (
-        <h2>Template slice, update me!</h2>
-      )}
-    </span>
-    {slice.primary.description ? (
-      <PrismicRichText field={slice.primary.description} />
-    ) : (
-      <p>start by editing this slice from inside Slice Machine!</p>
-    )}
-    <style jsx>{`
-      section {
-        max-width: 600px;
-        margin: 4em auto;
-        text-align: center;
-      }
-      .title {
-        color: #8592e0;
-      }
-    `}</style>
-  </section>
-);
+import { Bounded } from "../../components/Bounded";
+
+/**
+ * @typedef {import('../../types.generated').HeroSlice} HeroSlice
+ *
+ * @typedef {import("@prismicio/react").SliceComponentProps<HeroSlice>} HeroProps
+ */
+
+/**
+ * @param {HeroProps}
+ */
+const Hero = ({ slice }) => {
+  return (
+    <Bounded as="section" className="bg-gray-800 text-slate-300">
+      <div className="grid justify-items-center gap-6 text-center">
+        {prismicH.isFilled.richText(slice.primary.tagline) && (
+          <p className="max-w-lg text-sm font-semibold uppercase tracking-widest text-slate-500">
+            <PrismicText field={slice.primary.tagline} />
+          </p>
+        )}
+        {prismicH.isFilled.richText(slice.primary.title) && (
+          <h1 className="max-w-3xl text-6xl font-semibold text-white">
+            <PrismicText field={slice.primary.title} />
+          </h1>
+        )}
+        <div className="grid max-w-prose justify-center gap-6">
+          <PrismicRichText field={slice.primary.text} />
+        </div>
+      </div>
+    </Bounded>
+  );
+};
 
 export default Hero;
 
