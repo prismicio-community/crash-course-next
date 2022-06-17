@@ -7,41 +7,17 @@
       {
         "buttonLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
         },
-        "buttonText": "facilitate viral synergies",
-        "buttonStyle": "Filled"
+        "buttonText": "syndicate interactive interfaces",
+        "buttonStyle": "Outlined"
       },
       {
         "buttonLink": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         },
-        "buttonText": "seize leading-edge metrics",
-        "buttonStyle": "Outlined"
-      },
-      {
-        "buttonLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        },
-        "buttonText": "facilitate cross-platform action-items",
-        "buttonStyle": "Outlined"
-      },
-      {
-        "buttonLink": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        },
-        "buttonText": "aggregate bleeding-edge channels",
-        "buttonStyle": "Filled"
-      },
-      {
-        "buttonLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "buttonText": "generate rich architectures",
+        "buttonText": "mesh distributed e-commerce",
         "buttonStyle": "Filled"
       }
     ],
@@ -49,21 +25,21 @@
       "tagline": [
         {
           "type": "paragraph",
-          "text": "Adipisicing minim nulla ullamco.",
+          "text": "Consectetur cillum elit sunt qui aute irure adipisicing aliqua consequat.",
           "spans": []
         }
       ],
       "title": [
         {
           "type": "heading1",
-          "text": "Cultivate bleeding-edge e-commerce",
+          "text": "Revolutionize magnetic portals",
           "spans": []
         }
       ],
       "text": [
         {
           "type": "paragraph",
-          "text": "Proident exercitation ut do non nisi et eu proident fugiat duis nostrud incididunt. Exercitation ullamco aliqua ea id nulla sint et magna ex laborum ipsum.",
+          "text": "Anim adipisicing laboris cillum laborum magna do. Et sit culpa ex ea id.",
           "spans": []
         }
       ],
@@ -74,7 +50,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
       }
     }
   }

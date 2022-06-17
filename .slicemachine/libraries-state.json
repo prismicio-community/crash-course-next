@@ -256,7 +256,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/angeloashmore/projects/prismic/crash-course-next/.slicemachine/assets/slices/Features/default/preview.png",
+            "width": 800,
+            "height": 1092
+          }
+        }
       },
       "hero": {
         "library": "slices",
@@ -336,7 +342,8 @@
                     "options": [
                       "Filled",
                       "Outlined"
-                    ]
+                    ],
+                    "default_value": "Filled"
                   }
                 }
               },
@@ -353,41 +360,17 @@
               {
                 "buttonLink": {
                   "link_type": "Web",
-                  "url": "http://twitter.com"
+                  "url": "https://slicemachine.dev"
                 },
-                "buttonText": "facilitate viral synergies",
-                "buttonStyle": "Filled"
+                "buttonText": "syndicate interactive interfaces",
+                "buttonStyle": "Outlined"
               },
               {
                 "buttonLink": {
                   "link_type": "Web",
                   "url": "https://slicemachine.dev"
                 },
-                "buttonText": "seize leading-edge metrics",
-                "buttonStyle": "Outlined"
-              },
-              {
-                "buttonLink": {
-                  "link_type": "Web",
-                  "url": "https://prismic.io"
-                },
-                "buttonText": "facilitate cross-platform action-items",
-                "buttonStyle": "Outlined"
-              },
-              {
-                "buttonLink": {
-                  "link_type": "Web",
-                  "url": "http://google.com"
-                },
-                "buttonText": "aggregate bleeding-edge channels",
-                "buttonStyle": "Filled"
-              },
-              {
-                "buttonLink": {
-                  "link_type": "Web",
-                  "url": "http://twitter.com"
-                },
-                "buttonText": "generate rich architectures",
+                "buttonText": "mesh distributed e-commerce",
                 "buttonStyle": "Filled"
               }
             ],
@@ -395,21 +378,21 @@
               "tagline": [
                 {
                   "type": "paragraph",
-                  "text": "Adipisicing minim nulla ullamco.",
+                  "text": "Consectetur cillum elit sunt qui aute irure adipisicing aliqua consequat.",
                   "spans": []
                 }
               ],
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Cultivate bleeding-edge e-commerce",
+                  "text": "Revolutionize magnetic portals",
                   "spans": []
                 }
               ],
               "text": [
                 {
                   "type": "paragraph",
-                  "text": "Proident exercitation ut do non nisi et eu proident fugiat duis nostrud incididunt. Exercitation ullamco aliqua ea id nulla sint et magna ex laborum ipsum.",
+                  "text": "Anim adipisicing laboris cillum laborum magna do. Et sit culpa ex ea id.",
                   "spans": []
                 }
               ],
@@ -420,7 +403,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
               }
             }
           }
@@ -429,7 +412,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/angeloashmore/projects/prismic/crash-course-next/.slicemachine/assets/slices/Hero/default/preview.png",
+            "width": 800,
+            "height": 488
+          }
+        }
       },
       "image_and_text": {
         "library": "slices",
@@ -515,7 +504,7 @@
             "slice_type": "image_and_text",
             "items": [],
             "primary": {
-              "imageSide": "Left",
+              "imageSide": "Right",
               "image": {
                 "dimensions": {
                   "width": 900,
@@ -523,27 +512,32 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
               },
               "tagline": [
                 {
                   "type": "paragraph",
-                  "text": "Fugiat et deserunt irure et consectetur quis occaecat amet non sit.",
+                  "text": "Pariatur deserunt aute officia qui amet duis. Cupidatat excepteur esse ad fugiat esse fugiat consequat id. Laboris enim officia veniam deserunt do eiusmod nulla id sint consequat duis nisi nulla.",
                   "spans": []
                 }
               ],
               "text": [
                 {
+                  "type": "heading1",
+                  "text": "Incubate world-class e-commerce",
+                  "spans": []
+                },
+                {
                   "type": "paragraph",
-                  "text": "Et ex esse ullamco ut cillum velit reprehenderit veniam enim laborum non. Elit labore id duis eiusmod do voluptate ipsum mollit. Reprehenderit sit ullamco anim consequat enim proident qui sit excepteur.",
+                  "text": "Elit eiusmod sint esse ipsum excepteur. Esse excepteur Lorem fugiat cupidatat occaecat adipisicing aute do aute ullamco occaecat commodo id et. Esse nisi enim enim excepteur consectetur nulla commodo cillum esse.",
                   "spans": []
                 }
               ],
               "buttonLink": {
                 "link_type": "Web",
-                "url": "http://twitter.com"
+                "url": "https://prismic.io"
               },
-              "buttonText": "deploy vertical interfaces"
+              "buttonText": "expedite plug-and-play partnerships"
             }
           }
         },
@@ -551,7 +545,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/angeloashmore/projects/prismic/crash-course-next/.slicemachine/assets/slices/ImageAndText/default/preview.png",
+            "width": 800,
+            "height": 524
+          }
+        }
       }
     }
   }

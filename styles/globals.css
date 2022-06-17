@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[data-collapsible="true"].bg-white + [data-collapsible="true"].bg-white,
+[data-collapsible="true"].bg-gray-800 + [data-collapsible="true"].bg-gray-800 {
+  @apply pt-0 md:pt-0;
+}

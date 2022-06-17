@@ -5,7 +5,7 @@
     "slice_type": "image_and_text",
     "items": [],
     "primary": {
-      "imageSide": "Left",
+      "imageSide": "Right",
       "image": {
         "dimensions": {
           "width": 900,
@@ -13,27 +13,32 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
       },
       "tagline": [
         {
           "type": "paragraph",
-          "text": "Fugiat et deserunt irure et consectetur quis occaecat amet non sit.",
+          "text": "Pariatur deserunt aute officia qui amet duis. Cupidatat excepteur esse ad fugiat esse fugiat consequat id. Laboris enim officia veniam deserunt do eiusmod nulla id sint consequat duis nisi nulla.",
           "spans": []
         }
       ],
       "text": [
         {
+          "type": "heading1",
+          "text": "Incubate world-class e-commerce",
+          "spans": []
+        },
+        {
           "type": "paragraph",
-          "text": "Et ex esse ullamco ut cillum velit reprehenderit veniam enim laborum non. Elit labore id duis eiusmod do voluptate ipsum mollit. Reprehenderit sit ullamco anim consequat enim proident qui sit excepteur.",
+          "text": "Elit eiusmod sint esse ipsum excepteur. Esse excepteur Lorem fugiat cupidatat occaecat adipisicing aute do aute ullamco occaecat commodo id et. Esse nisi enim enim excepteur consectetur nulla commodo cillum esse.",
           "spans": []
         }
       ],
       "buttonLink": {
         "link_type": "Web",
-        "url": "http://twitter.com"
+        "url": "https://prismic.io"
       },
-      "buttonText": "deploy vertical interfaces"
+      "buttonText": "expedite plug-and-play partnerships"
     }
   }
 ]

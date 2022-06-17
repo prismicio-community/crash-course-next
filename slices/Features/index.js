@@ -80,7 +80,7 @@ const Features = ({ slice }) => {
             }}
           />
         </div>
-        <ul className="mt-8 grid grid-cols-1 gap-12 md:grid-cols-3">
+        <ul className="mt-8 grid grid-cols-1 items-start gap-12 md:grid-cols-3">
           {slice.items.map((item) => (
             <Card
               key={prismicH.asText(item.description)}
