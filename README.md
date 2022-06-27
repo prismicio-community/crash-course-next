@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prismic + Next.js Crash Course
 
-## Getting Started
+[Prismic][prismic] is a headless website builder. With a traditional CMS, you can manage a website's text and images. With Prismic, you can also manage website components — so teams can build their entire website with Prismic.
 
-First, run the development server:
+This repository should be used alongside Prismic's Crash Course guide.
 
-```bash
-npm run dev
-# or
-yarn dev
+[**View the Prismic + Next.js Crash Course**][prismic-crash-course]
+
+## 🚀 Quick start
+
+The fastest way to learn Prismic is with a hands-on demo.
+
+```sh
+npx prismic-cli@latest theme \
+  --theme-url https://github.com/prismicio-community/crash-course-next \
+  --conf sm.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+With this command, you’ll get a fully-featured Prismic website to test out.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You’ll be asked to log in with a Prismic account and name a new Prismic content repository. Go ahead and name the repository anything you want.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Once the app is created, navigate into the app directory and start it up.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```sh
+npm run dev
+```
 
-## Learn More
+You’ll be able to see the live site running at <http://localhost:3000>.
 
-To learn more about Next.js, take a look at the following resources:
+## Learn more
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Continue learning about Prismic with the [Prismic + Next.js Crash Course][prismic-crash-course].
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+```
+Copyright 2013-2022 Prismic <contact@prismic.io> (https://prismic.io)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+[prismic]: https://prismic.io/
+[prismic-crash-course]: https://prismic.io/docs/technologies/nextjs-crash-course
