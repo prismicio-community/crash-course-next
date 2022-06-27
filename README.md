@@ -2,7 +2,7 @@
 
 [Prismic][prismic] is a headless website builder. With a traditional CMS, you can manage a website's text and images. With Prismic, you can also manage website components — so teams can build their entire website with Prismic.
 
-This repository should be used alongside Prismic's Crash Course guide.
+This repository should be used alongside [Prismic's Crash Course guide][prismic-crash-course].
 
 [**View the Prismic + Next.js Crash Course**][prismic-crash-course]
 
