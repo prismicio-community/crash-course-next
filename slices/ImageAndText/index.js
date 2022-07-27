@@ -35,7 +35,7 @@ const ImageAndText = ({ slice }) => {
               <PrismicText field={slice.primary.tagline} />
             </p>
           )}
-          {prismicH.isFilled.richText(slice.primary.tagline) && (
+          {prismicH.isFilled.richText(slice.primary.text) && (
             <div className="grid max-w-prose gap-6">
               <PrismicRichText
                 field={slice.primary.text}
