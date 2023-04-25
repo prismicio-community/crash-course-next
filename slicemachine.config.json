@@ -1,0 +1,6 @@
+{
+  "libraries": ["./slices"],
+  "repositoryName": "crash-course",
+  "adapter": "@slicemachine/adapter-next",
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
+}
