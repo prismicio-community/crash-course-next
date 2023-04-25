@@ -1,6 +1,4 @@
-const prismic = require("@prismicio/client");
-
-const sm = require("./sm.json");
+const { repositoryName } = require("./slicemachine.config.json");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,9 +7,7 @@ const nextConfig = {
     return [
       {
         source: "/admin",
-        destination: `https://${prismic.getRepositoryName(
-          sm.apiEndpoint
-        )}.prismic.io`,
+        destination: `https://${repositoryName}.prismic.io`,
         permanent: false,
       },
     ];
