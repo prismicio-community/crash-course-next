@@ -1,5 +1,4 @@
 import * as prismic from "@prismicio/client";
-import * as prismicH from "@prismicio/helpers";
 import * as prismicNext from "@prismicio/next";
 
 import sm from "./slicemachine.config.json";
@@ -12,19 +11,19 @@ export const { repositoryName } = sm;
 /**
  * The project's Prismic Link Resolver. This function determines the URL for a given Prismic document.
  *
- * @type {prismicH.LinkResolverFunction}
+ * @type {prismic.Client['routes']}
  */
-export const linkResolver = (link) => {
-  if (link.type === "page") {
-    if (link.uid === "home") {
-      return "/";
-    }
-
-    return `/${link.uid}`;
-  }
-
-  return "/";
-};
+const routes = [
+  {
+    type: "page",
+    uid: "home",
+    path: "/",
+  },
+  {
+    type: "page",
+    path: "/:uid",
+  },
+];
 
 /**
  * Creates a Prismic client for the project's repository. The client is used to
@@ -32,14 +31,13 @@ export const linkResolver = (link) => {
  *
  * @param config {prismicNext.CreateClientConfig} - A configuration object to
  */
-export const createClient = (config = {}) => {
-  const client = prismic.createClient(repositoryName);
-
-  prismicNext.enableAutoPreviews({
-    client,
-    previewData: config.previewData,
-    req: config.req,
+export const createClient = ({ previewData, req, ...config } = {}) => {
+  const client = prismic.createClient(repositoryName, {
+    routes,
+    ...config,
   });
+
+  prismicNext.enableAutoPreviews({ client, previewData, req });
 
   return client;
 };

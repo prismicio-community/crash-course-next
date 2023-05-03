@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { Bounded } from "../../components/Bounded";
 
 /**
- * @typedef {import('../../types.generated').FeaturesSlice} FeaturesSlice
+ * @typedef {import('@prismicio/client').Content.FeaturesSlice} FeaturesSlice
  *
  * @typedef {import("@prismicio/react").SliceComponentProps<FeaturesSlice>} FeaturesProps
  */
@@ -22,7 +22,8 @@ const Card = ({ item, alignment }) => {
       <div className="relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full bg-slate-200 text-slate-500">
         <PrismicNextImage
           field={item.image}
-          layout="fill"
+          sizes="100vw"
+          fill={true}
           className="object-cover"
         />
       </div>

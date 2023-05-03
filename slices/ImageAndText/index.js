@@ -6,7 +6,7 @@ import { Bounded } from "../../components/Bounded";
 import { ButtonLink } from "../../components/ButtonLink";
 
 /**
- * @typedef {import('../../types.generated').ImageAndTextSlice} ImageAndTextSlice
+ * @typedef {import('@prismicio/client').Content.ImageAndTextSlice} ImageAndTextSlice
  *
  * @typedef {import("@prismicio/react").SliceComponentProps<ImageAndTextSlice>} ImageAndTextProps
  */
@@ -25,8 +25,8 @@ const ImageAndText = ({ slice }) => {
         >
           <PrismicNextImage
             field={slice.primary.image}
-            layout="responsive"
-            className="bg-gray-100"
+            sizes="100vw"
+            className="h-auto w-full bg-gray-100"
           />
         </div>
         <div className="grid gap-6">

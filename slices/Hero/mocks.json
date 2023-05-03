@@ -1,0 +1,95 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "tagline": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Esse do sunt officia deserunt deserunt velit proident minim nostrud enim ad incididunt dolor ullamco. Enim aliquip consequat in cupidatat."
+            }
+          }
+        ]
+      },
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Myself"
+            }
+          }
+        ]
+      },
+      "text": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Veniam sit sint pariatur. Exercitation commodo amet tempor occaecat dolore aute quis culpa reprehenderit consectetur. Sit duis aliquip commodo laboris id exercitation irure dolor exercitation proident qui ea fugiat excepteur."
+            }
+          }
+        ]
+      },
+      "backgroundImage": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+          "width": 6597,
+          "height": 4398
+        },
+        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
+        "width": 6597,
+        "height": 4398,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "buttonLink",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://prismic.io"
+              }
+            }
+          ],
+          [
+            "buttonText",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "simply",
+              "type": "Text"
+            }
+          ],
+          [
+            "buttonStyle",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "Filled",
+              "type": "Select"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

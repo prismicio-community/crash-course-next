@@ -6,7 +6,7 @@ import { Bounded } from "../../components/Bounded";
 import { ButtonLink } from "../../components/ButtonLink";
 
 /**
- * @typedef {import('../../types.generated').HeroSlice} HeroSlice
+ * @typedef {import('@prismicio/client').Content.HeroSlice} HeroSlice
  *
  * @typedef {import("@prismicio/react").SliceComponentProps<HeroSlice>} HeroProps
  */
@@ -19,7 +19,8 @@ const Hero = ({ slice }) => {
     <Bounded as="section" className="relative bg-gray-800 text-slate-300">
       <PrismicNextImage
         field={slice.primary.backgroundImage}
-        layout="fill"
+        sizes="100vw"
+        fill={true}
         className="pointer-events-none select-none object-cover"
       />
       <div className="relative grid justify-items-center gap-6 text-center">
