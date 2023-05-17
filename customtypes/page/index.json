@@ -1,6 +1,7 @@
 {
   "id": "page",
   "label": "Page",
+  "format": "page",
   "repeatable": true,
   "status": true,
   "json": {
@@ -26,9 +27,15 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "features": { "type": "SharedSlice" },
-            "hero": { "type": "SharedSlice" },
-            "image_and_text": { "type": "SharedSlice" }
+            "features": {
+              "type": "SharedSlice"
+            },
+            "hero": {
+              "type": "SharedSlice"
+            },
+            "image_and_text": {
+              "type": "SharedSlice"
+            }
           }
         }
       }
