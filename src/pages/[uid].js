@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { SliceZone } from "@prismicio/react";
-import * as prismicH from "@prismicio/helpers";
+import * as prismic from "@prismicio/client";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
@@ -9,7 +9,7 @@ export default function Page({ page }) {
   return (
     <main>
       <Head>
-        <title>{prismicH.asText(page.data.title)}</title>
+        <title>{prismic.asText(page.data.title)}</title>
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </main>
@@ -19,7 +19,9 @@ export default function Page({ page }) {
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData });
 
-  const page = await client.getByUID("page", params.uid, {});
+  const page = await client.getByUID("page", params.uid, {
+    filters: [prismic.filter.not("my.page.uid", "home")],
+  });
 
   return {
     props: {
@@ -34,7 +36,7 @@ export async function getStaticPaths() {
   const pages = await client.getAllByType("page");
 
   return {
-    paths: pages.map((page) => prismicH.asLink(page)),
+    paths: pages.map((page) => prismic.asLink(page)),
     fallback: false,
   };
 }

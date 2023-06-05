@@ -1,6 +1,6 @@
 import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-import * as prismicH from "@prismicio/helpers";
+import * as prismic from "@prismicio/client";
 import clsx from "clsx";
 
 import { Bounded } from "@/components/Bounded";
@@ -38,7 +38,7 @@ function Card({ item, alignment }) {
           ),
         }}
       />
-      {prismicH.isFilled.link(item.buttonLink) && (
+      {prismic.isFilled.link(item.buttonLink) && (
         <div>
           <PrismicLink
             field={item.buttonLink}
@@ -65,7 +65,7 @@ export default function Features({ slice }) {
   return (
     <Bounded as="section" className="bg-white text-slate-500">
       <div className="grid justify-items-center gap-6">
-        {prismicH.isFilled.richText(slice.primary.tagline) && (
+        {prismic.isFilled.richText(slice.primary.tagline) && (
           <p className="max-w-lg text-center text-sm font-semibold uppercase tracking-widest text-slate-300">
             <PrismicText field={slice.primary.tagline} />
           </p>
@@ -85,7 +85,7 @@ export default function Features({ slice }) {
         <ul className="mt-8 grid grid-cols-1 items-start gap-12 md:grid-cols-3">
           {slice.items.map((item) => (
             <Card
-              key={prismicH.asText(item.description)}
+              key={prismic.asText(item.description)}
               item={item}
               alignment={slice.primary.alignment}
             />

@@ -1,6 +1,6 @@
-import * as prismicH from "@prismicio/helpers";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
+import * as prismic from "@prismicio/client";
 
 import { Bounded } from "@/components/Bounded";
 import { ButtonLink } from "@/components/ButtonLink";
@@ -25,12 +25,12 @@ export default function Hero({ slice }) {
         alt=""
       />
       <div className="relative grid justify-items-center gap-6 text-center">
-        {prismicH.isFilled.richText(slice.primary.tagline) && (
+        {prismic.isFilled.richText(slice.primary.tagline) && (
           <p className="max-w-lg text-sm font-semibold uppercase tracking-widest text-slate-500">
             <PrismicText field={slice.primary.tagline} />
           </p>
         )}
-        {prismicH.isFilled.richText(slice.primary.title) && (
+        {prismic.isFilled.richText(slice.primary.title) && (
           <h1 className="max-w-3xl text-6xl font-semibold text-white">
             <PrismicText field={slice.primary.title} />
           </h1>
@@ -42,7 +42,7 @@ export default function Hero({ slice }) {
           <ul className="flex flex-wrap gap-4">
             {slice.items.map(
               (item) =>
-                prismicH.isFilled.link(item.buttonLink) && (
+                prismic.isFilled.link(item.buttonLink) && (
                   <li key={item.buttonText}>
                     <ButtonLink
                       field={item.buttonLink}

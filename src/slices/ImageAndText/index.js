@@ -1,6 +1,6 @@
-import * as prismicH from "@prismicio/helpers";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
+import * as prismic from "@prismicio/helpers";
 
 import { Bounded } from "@/components/Bounded";
 import { ButtonLink } from "@/components/ButtonLink";
@@ -30,12 +30,12 @@ export default function ImageAndText({ slice }) {
           />
         </div>
         <div className="grid gap-6">
-          {prismicH.isFilled.richText(slice.primary.tagline) && (
+          {prismic.isFilled.richText(slice.primary.tagline) && (
             <p className="max-w-xs text-sm font-semibold uppercase tracking-widest text-slate-300">
               <PrismicText field={slice.primary.tagline} />
             </p>
           )}
-          {prismicH.isFilled.richText(slice.primary.text) && (
+          {prismic.isFilled.richText(slice.primary.text) && (
             <div className="grid max-w-prose gap-6">
               <PrismicRichText
                 field={slice.primary.text}
@@ -49,7 +49,7 @@ export default function ImageAndText({ slice }) {
               />
             </div>
           )}
-          {prismicH.isFilled.link(slice.primary.buttonLink) && (
+          {prismic.isFilled.link(slice.primary.buttonLink) && (
             <div>
               <ButtonLink field={slice.primary.buttonLink}>
                 {slice.primary.buttonText}
