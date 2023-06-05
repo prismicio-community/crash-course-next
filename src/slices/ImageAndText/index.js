@@ -1,6 +1,6 @@
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
-import * as prismic from "@prismicio/helpers";
+import * as prismic from "@prismicio/client";
 
 import { Bounded } from "@/components/Bounded";
 import { ButtonLink } from "@/components/ButtonLink";
