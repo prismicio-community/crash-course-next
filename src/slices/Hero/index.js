@@ -2,8 +2,8 @@ import * as prismicH from "@prismicio/helpers";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
 
-import { Bounded } from "../../components/Bounded";
-import { ButtonLink } from "../../components/ButtonLink";
+import { Bounded } from "@/components/Bounded";
+import { ButtonLink } from "@/components/ButtonLink";
 
 /**
  * @typedef {import('@prismicio/client').Content.HeroSlice} HeroSlice
@@ -14,7 +14,7 @@ import { ButtonLink } from "../../components/ButtonLink";
 /**
  * @param {HeroProps}
  */
-const Hero = ({ slice }) => {
+export default function Hero({ slice }) {
   return (
     <Bounded as="section" className="relative bg-gray-800 text-slate-300">
       <PrismicNextImage
@@ -22,6 +22,7 @@ const Hero = ({ slice }) => {
         sizes="100vw"
         fill={true}
         className="pointer-events-none select-none object-cover"
+        alt=""
       />
       <div className="relative grid justify-items-center gap-6 text-center">
         {prismicH.isFilled.richText(slice.primary.tagline) && (
@@ -59,6 +60,4 @@ const Hero = ({ slice }) => {
       </div>
     </Bounded>
   );
-};
-
-export default Hero;
+}

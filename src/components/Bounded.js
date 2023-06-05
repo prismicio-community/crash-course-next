@@ -1,11 +1,11 @@
 import clsx from "clsx";
 
-export const Bounded = ({
+export function Bounded({
   as: Comp = "div",
   collapsible = true,
   className,
   children,
-}) => {
+}) {
   return (
     <Comp
       data-collapsible={collapsible}
@@ -14,4 +14,4 @@ export const Bounded = ({
       <div className="mx-auto w-full max-w-5xl">{children}</div>
     </Comp>
   );
-};
+}

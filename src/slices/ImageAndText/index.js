@@ -2,8 +2,8 @@ import * as prismicH from "@prismicio/helpers";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, PrismicText } from "@prismicio/react";
 
-import { Bounded } from "../../components/Bounded";
-import { ButtonLink } from "../../components/ButtonLink";
+import { Bounded } from "@/components/Bounded";
+import { ButtonLink } from "@/components/ButtonLink";
 
 /**
  * @typedef {import('@prismicio/client').Content.ImageAndTextSlice} ImageAndTextSlice
@@ -14,7 +14,7 @@ import { ButtonLink } from "../../components/ButtonLink";
 /**
  * @param {ImageAndTextProps}
  */
-const ImageAndText = ({ slice }) => {
+export default function ImageAndText({ slice }) {
   return (
     <Bounded as="section" className="bg-white text-slate-500">
       <div className="grid grid-flow-col-dense items-center gap-6 md:grid-cols-2 md:gap-10 lg:gap-20">
@@ -60,6 +60,4 @@ const ImageAndText = ({ slice }) => {
       </div>
     </Bounded>
   );
-};
-
-export default ImageAndText;
+}

@@ -3,7 +3,7 @@ import { PrismicNextImage } from "@prismicio/next";
 import * as prismicH from "@prismicio/helpers";
 import clsx from "clsx";
 
-import { Bounded } from "../../components/Bounded";
+import { Bounded } from "@/components/Bounded";
 
 /**
  * @typedef {import('@prismicio/client').Content.FeaturesSlice} FeaturesSlice
@@ -11,7 +11,7 @@ import { Bounded } from "../../components/Bounded";
  * @typedef {import("@prismicio/react").SliceComponentProps<FeaturesSlice>} FeaturesProps
  */
 
-const Card = ({ item, alignment }) => {
+function Card({ item, alignment }) {
   return (
     <li
       className={clsx(
@@ -25,6 +25,7 @@ const Card = ({ item, alignment }) => {
           sizes="100vw"
           fill={true}
           className="object-cover"
+          alt=""
         />
       </div>
       <PrismicRichText
@@ -55,12 +56,12 @@ const Card = ({ item, alignment }) => {
       )}
     </li>
   );
-};
+}
 
 /**
  * @param {FeaturesProps}
  */
-const Features = ({ slice }) => {
+export default function Features({ slice }) {
   return (
     <Bounded as="section" className="bg-white text-slate-500">
       <div className="grid justify-items-center gap-6">
@@ -93,6 +94,4 @@ const Features = ({ slice }) => {
       </div>
     </Bounded>
   );
-};
-
-export default Features;
+}

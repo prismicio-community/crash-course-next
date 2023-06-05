@@ -1,8 +1,8 @@
-import { PrismicLink } from "@prismicio/react";
+import { PrismicNextLink } from "@prismicio/next";
 
-export const ButtonLink = ({ type = "filled", ...props }) => {
+export function ButtonLink({ type = "filled", ...props }) {
   return (
-    <PrismicLink
+    <PrismicNextLink
       className={`inline-block rounded border-2 border-prismic-purple px-5 py-3 font-semibold text-white ${
         type === "filled"
           ? "bg-prismic-purple text-white"
@@ -11,4 +11,4 @@ export const ButtonLink = ({ type = "filled", ...props }) => {
       {...props}
     />
   );
-};
+}
