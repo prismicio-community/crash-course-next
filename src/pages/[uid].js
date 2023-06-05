@@ -19,9 +19,7 @@ export default function Page({ page }) {
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData });
 
-  const page = await client.getByUID("page", params.uid, {
-    filters: [prismic.filter.not("my.page.uid", "home")],
-  });
+  const page = await client.getByUID("page", params.uid);
 
   return {
     props: {
@@ -33,7 +31,9 @@ export async function getStaticProps({ params, previewData }) {
 export async function getStaticPaths() {
   const client = createClient();
 
-  const pages = await client.getAllByType("page");
+  const pages = await client.getAllByType("page", {
+    filters: [prismic.filter.not("my.page.uid", "home")],
+  });
 
   return {
     paths: pages.map((page) => prismic.asLink(page)),
