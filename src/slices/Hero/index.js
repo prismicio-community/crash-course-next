@@ -38,19 +38,19 @@ export default function Hero({ slice }) {
         <div className="grid max-w-prose justify-center gap-6">
           <PrismicRichText field={slice.primary.text} />
         </div>
-        {slice.items.length > 0 && (
+        {slice.primary.buttons.length > 0 && (
           <ul className="flex flex-wrap gap-4">
-            {slice.items.map(
-              (item) =>
-                prismic.isFilled.link(item.buttonLink) && (
-                  <li key={item.buttonText}>
+            {slice.primary.buttons.map(
+              (button) =>
+                prismic.isFilled.link(button.link) && (
+                  <li key={button.text}>
                     <ButtonLink
-                      field={item.buttonLink}
+                      field={button.link}
                       type={
-                        item.buttonStyle === "Filled" ? "filled" : "outlined"
+                        button.style === "Filled" ? "filled" : "outlined"
                       }
                     >
-                      {item.buttonText}
+                      {button.text}
                     </ButtonLink>
                   </li>
                 )
