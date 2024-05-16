@@ -33,7 +33,7 @@
           "type": "StructuredText",
           "config": {
             "label": "Text",
-            "placeholder": "Optional - Main text to display",
+            "placeholder": "Main text to display",
             "allowTargetBlank": true,
             "multi": "paragraph,strong,em,hyperlink"
           }
