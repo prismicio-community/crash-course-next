@@ -64,7 +64,7 @@
                 "type": "Text",
                 "config": {
                   "label": "Button Text",
-                  "placeholder": "Optional - Text for the button"
+                  "placeholder": "Text for the button"
                 }
               },
               "style": {
