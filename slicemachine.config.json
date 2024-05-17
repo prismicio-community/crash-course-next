@@ -1,7 +1,6 @@
 {
   "libraries": ["./src/slices"],
-  "repositoryName": "crash-course",
-  "apiEndpoint": "https://crash-course.wroom.io/api/v2",
+  "repositoryName": "crash-course-24",
   "adapter": "@slicemachine/adapter-next",
   "localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
 }
