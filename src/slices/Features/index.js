@@ -11,7 +11,7 @@ import { Bounded } from "@/components/Bounded";
  * @typedef {import("@prismicio/react").SliceComponentProps<FeaturesSlice>} FeaturesProps
  */
 
-function Card({ item, alignment }) {
+function Card({ feature, alignment }) {
   return (
     <li
       className={clsx(
@@ -21,7 +21,7 @@ function Card({ item, alignment }) {
     >
       <div className="relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-full bg-slate-200 text-slate-500">
         <PrismicNextImage
-          field={item.image}
+          field={feature.image}
           sizes="100vw"
           fill={true}
           className="object-cover"
@@ -29,7 +29,7 @@ function Card({ item, alignment }) {
         />
       </div>
       <PrismicRichText
-        field={item.description}
+        field={feature.description}
         components={{
           heading3: ({ children }) => (
             <h3 className="text-2xl font-semibold text-slate-800">
@@ -38,13 +38,13 @@ function Card({ item, alignment }) {
           ),
         }}
       />
-      {prismic.isFilled.link(item.buttonLink) && (
+      {prismic.isFilled.link(feature.buttonLink) && (
         <div>
           <PrismicLink
-            field={item.buttonLink}
+            field={feature.buttonLink}
             className="group font-semibold text-slate-300 transition hover:text-slate-500"
           >
-            {item.buttonText || "Learn more"}
+            {feature.buttonText || "Learn more"}
             <span
               aira-hidden={true}
               className="ml-2 inline-block transition-transform group-hover:translate-x-1"
@@ -83,10 +83,10 @@ export default function Features({ slice }) {
           />
         </div>
         <ul className="mt-8 grid grid-cols-1 items-start gap-12 md:grid-cols-3">
-          {slice.items.map((item) => (
+          {slice.primary.features.map((feature) => (
             <Card
-              key={prismic.asText(item.description)}
-              item={item}
+              key={prismic.asText(feature.description)}
+              feature={feature}
               alignment={slice.primary.alignment}
             />
           ))}

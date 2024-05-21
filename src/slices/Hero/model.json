@@ -33,7 +33,7 @@
           "type": "StructuredText",
           "config": {
             "label": "Text",
-            "placeholder": "Optional - Main text to display",
+            "placeholder": "Main text to display",
             "allowTargetBlank": true,
             "multi": "paragraph,strong,em,hyperlink"
           }
@@ -45,37 +45,45 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "buttons": {
+          "type": "Group",
+          "config": {
+            "label": "Buttons",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link",
+                  "placeholder": "Link for the button",
+                  "select": null
+                }
+              },
+              "text": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Text",
+                  "placeholder": "Text for the button"
+                }
+              },
+              "style": {
+                "type": "Select",
+                "config": {
+                  "label": "Button Style",
+                  "placeholder": "Determines the button's appearance",
+                  "options": [
+                    "Filled",
+                    "Outlined"
+                  ],
+                  "default_value": "Filled"
+                }
+              }
+            }
+          }
         }
       },
-      "items": {
-        "buttonLink": {
-          "type": "Link",
-          "config": {
-            "label": "Button Link",
-            "placeholder": "Link for the button",
-            "select": null
-          }
-        },
-        "buttonText": {
-          "type": "Text",
-          "config": {
-            "label": "Button Text",
-            "placeholder": "Optional - Text for the button"
-          }
-        },
-        "buttonStyle": {
-          "type": "Select",
-          "config": {
-            "label": "Button Style",
-            "placeholder": "Determines the button's appearance",
-            "options": [
-              "Filled",
-              "Outlined"
-            ],
-            "default_value": "Filled"
-          }
-        }
-      },
+      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

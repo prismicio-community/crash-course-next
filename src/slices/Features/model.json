@@ -40,42 +40,50 @@
             ],
             "default_value": "Left"
           }
+        },
+        "features": {
+          "type": "Group",
+          "config": {
+            "label": "Features",
+            "repeat": true,
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "Text describing the feature",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "buttonLink": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link",
+                  "placeholder": "Optional - Link for the button",
+                  "select": null
+                }
+              },
+              "buttonText": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Text",
+                  "placeholder": "Optional - Text for the button"
+                }
+              }
+            }
+          }
         }
       },
-      "items": {
-        "image": {
-          "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Description",
-            "placeholder": "Text describing the feature",
-            "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading3,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          }
-        },
-        "buttonLink": {
-          "type": "Link",
-          "config": {
-            "label": "Button Link",
-            "placeholder": "Optional - Link for the button",
-            "select": null
-          }
-        },
-        "buttonText": {
-          "type": "Text",
-          "config": {
-            "label": "Button Text",
-            "placeholder": "Optional - Text for the button"
-          }
-        }
-      },
+      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]
